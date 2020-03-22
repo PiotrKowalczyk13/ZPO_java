@@ -4,15 +4,6 @@ import java.util.Arrays;
 
 class countLev{
 
-    public static double costOfSubstitution(char a, char b) {
-        return a == b ? 0 : 0.5;
-    }
-
-    public static double min(int... numbers) {
-        return Arrays.stream(numbers)
-                .min().orElse(Integer.MAX_VALUE);
-    }
-
     static double LevQWERTY(String s1, String s2){
         HashMap<Character, String> neighbour = new HashMap<Character, String>();
         neighbour.put('q', "ww");
