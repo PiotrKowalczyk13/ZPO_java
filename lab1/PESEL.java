@@ -139,7 +139,7 @@ class Data{
         }
         return str;
     }
-//
+
     static String sex(String pesel_val){
         if((pesel_val.charAt(9)-'0') % 2 == 1){
             return "Mężczyzna";
