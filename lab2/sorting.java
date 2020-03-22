@@ -93,7 +93,7 @@ public class sorting {
         sort_Methods.fastSortStrings2(collator, names);
         System.out.println(Arrays.toString(names));
 
-
+//
         System.out.println("\nCzas dla insertion sort: "+time_Count.getTime(1)+"s");
         System.out.println("Czas dla fast sort z obiektem anonimowym: "+time_Count.getTime(2)+"s");
         System.out.println("Czas dla fast sort z lambda: "+time_Count.getTime(3)+"s");
