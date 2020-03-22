@@ -2,17 +2,18 @@ import java.util.Arrays;
 import java.text.Collator;
 import java.util.Comparator;
 import java.util.Locale;
+import java.lang.String;
 
 class sort_Methods{
 
     static void sortStrings(Collator collator, String[] words){
-        int n = words.length;
-        for (int i = 1; i < n; ++i){
+        int j;
+        for (int i = 1; i < words.length; ++i){
             String key = words[i];
-            int j = i - 1;
+            j = i - 1;
             while (j >= 0 && (collator.compare(words[j], key)) == 1){
                 words[j + 1] = words[j];
-                j = j - 1;
+                j--;
             }
             words[j + 1] = key;
         }
@@ -93,7 +94,7 @@ public class sorting {
         sort_Methods.fastSortStrings2(collator, names);
         System.out.println(Arrays.toString(names));
 
-//
+
         System.out.println("\nCzas dla insertion sort: "+time_Count.getTime(1)+"s");
         System.out.println("Czas dla fast sort z obiektem anonimowym: "+time_Count.getTime(2)+"s");
         System.out.println("Czas dla fast sort z lambda: "+time_Count.getTime(3)+"s");
