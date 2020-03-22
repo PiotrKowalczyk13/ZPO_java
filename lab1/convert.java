@@ -50,4 +50,4 @@ public class convert {
             System.out.print("Niewłaściwe dane");
         }
     }
-}
+}//
