@@ -63,7 +63,7 @@ public class ruler {
                 System.out.println("Niepoprawne dane, wartości muszą być większe od 0");
                 System.exit(2);
             }
-
+//
             drawRuler(x, y);
     }
 }
