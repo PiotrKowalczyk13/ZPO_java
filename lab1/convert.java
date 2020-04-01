@@ -31,8 +31,8 @@ public class convert {
     public static void main(String[] args){
         int liczba = 0b1101_1000;
 
-        System.out.print(liczba);
-        System.out.print("\nWybierz rodzaj konwersji, wpisując: szesnastkowy, dziesiętny lub trójkowy\n");
+        System.out.println(liczba);
+        System.out.print("Wybierz rodzaj konwersji, wpisując: szesnastkowy, dziesiętny lub trójkowy\n");
 
         Scanner scan = new Scanner(System.in);
         String conv_val = scan.nextLine();
@@ -50,4 +50,4 @@ public class convert {
             System.out.print("Niewłaściwe dane");
         }
     }
-}//
+}

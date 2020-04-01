@@ -59,7 +59,6 @@ class change{
 public class dictionary {
     public static void main(String[] args) {
 
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj trzycyfrową liczbę: ");
         String val = scan.nextLine();
@@ -72,4 +71,4 @@ public class dictionary {
 
         System.out.println(change.to_Words(val));
     }
-}//
+}
