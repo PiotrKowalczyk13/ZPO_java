@@ -62,7 +62,7 @@ class countLev{
                         cost = 1;
                     }
                 }
-                array[i][j] = Math.min(Math.min(array[i-1][j]+1, array[i][j-1]+1), array[i-1][j-1]+cost);
+                    array[i][j] = Math.min(Math.min(array[i-1][j]+1, array[i][j-1]+1), array[i-1][j-1]+cost);
             }
         }
 

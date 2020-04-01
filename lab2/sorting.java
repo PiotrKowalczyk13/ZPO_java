@@ -11,7 +11,7 @@ class sort_Methods{
         for (int i = 1; i < words.length; ++i){
             String key = words[i];
             j = i - 1;
-            while (j >= 0 && (collator.compare(words[j], key)) == 1){
+            while (j >= 0 && (collator.compare(words[j], key))   == 1){
                 words[j + 1] = words[j];
                 j--;
             }
