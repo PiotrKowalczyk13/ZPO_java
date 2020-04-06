@@ -1,7 +1,4 @@
-import com.sun.deploy.config.JfxRuntime;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
 import javafx.scene.control.TextInputDialog;
 import javafx.stage.Stage;
 
@@ -24,7 +21,7 @@ public class EngTest extends Application {
         for (int index : list) {
             dialog.setTitle("\nPytanie "+(j+1));
             String question = EngTestCreate.translations[index].getOriginal();
-            dialog.setHeaderText(question);
+            dialog.setHeaderText("Pytanie: "+question);
             dialog.setContentText("Odpowiedź: ");
 
             String[] answer = EngTestCreate.translations[index].getAnswer();
@@ -36,6 +33,7 @@ public class EngTest extends Application {
 
             answers[j] = new Answers(question, userAnswer);
             j++;
+            dialog.getEditor().clear();
         }
         double time_total = System.currentTimeMillis() - time;
         System.out.println("Punkty: " + pts);
