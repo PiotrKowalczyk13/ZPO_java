@@ -1,13 +1,27 @@
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+
 import java.util.Scanner;
 
-public class Main{
+public class Main {
+    static JFXPanel jfxPanel = new JFXPanel();
+
+
     public static void main(String[] args) {
+        Platform.setImplicitExit(false);
         EngTest engTest = new EngTest();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Imie: ");
+        System.out.print("Imie: ");
         String name = scanner.nextLine();
-        System.out.println("Nazwisko: ");
+        System.out.print("Nazwisko: ");
         String surname = scanner.nextLine();
-        EngTest.startTest(name, surname);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                EngTest.startTest(name, surname);
+                Platform.exit();
+            }
+        });
+
     }
 }
