@@ -1,0 +1,46 @@
+[
+  {
+    "original": "krzyczeć",
+    "answer": ["cry", "shout", "scream"]
+  },
+  {
+    "original": "telefon",
+    "answer": ["telephone", "phone"]
+  },
+  {
+    "original": "dom",
+    "answer": ["house", "home"]
+  },
+  {
+    "original": "człowiek",
+    "answer": ["man", "human", "person", "individual"]
+  },
+  {
+    "original": "klucz",
+    "answer": ["key", "wrench", "code"]
+  },
+  {
+    "original": "pomarańcza",
+    "answer": ["orange"]
+  },
+  {
+    "original": "życie",
+    "answer": ["life", "existence"]
+  },
+  {
+    "original": "nauka",
+    "answer": ["science", "education", "learning", "study"]
+  },
+  {
+    "original": "lustro",
+    "answer": ["mirror", "looking-glass", "glass"]
+  },
+  {
+    "original": "pudło",
+    "answer": ["box", "case", "chest"]
+  },
+  {
+    "original": "kubek",
+    "answer": ["mug", "cup"]
+  }
+]
